@@ -22,7 +22,7 @@
   />
   <include file="$(find waypoint_maker)/launch/waypoint_loader.launch">
     <arg name="load_csv" value="true" />
-    <arg name="multi_lane_csv" value="/home/autoware/.autoware/data/path/moriyama_path.txt" />
+    <arg name="multi_lane_csv" value="$(env HOME)/.autoware/data/path/moriyama_path.txt" />
   </include>
 
   <!-- lane_navi -->
