@@ -37,7 +37,7 @@ variables:
 
 .build_cross: &build_cross_common
   script:
-    - wget https://gitlab.com/autowarefoundation/autoware.ai/autoware/raw/master/ros/cross_toolchain.cmake
+    - wget https://gitlab.com/autowarefoundation/autoware.ai/docker/raw/master/crossbuild/cross_toolchain.cmake
     - 'docker run
           -e AUTOWARE_SYSROOT=${AUTOWARE_SYSROOT}
           --rm
@@ -73,7 +73,7 @@ build_melodic:
   variables:
     ROS_DISTRO: melodic
   <<: *build_common
-    
+
 build_kinetic_cross:
   image: docker
   services:
@@ -83,7 +83,7 @@ build_kinetic_cross:
     AUTOWARE_DOCKER_DATE: "latest"
     <<: *build_cross_vars
   <<: *build_cross_common
-    
+
 build_melodic_cross:
   image: docker
   services:
