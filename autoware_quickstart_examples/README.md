@@ -41,13 +41,13 @@ $ roslaunch runtime_manager runtime_manager.launch
 3. Go to the _Simulation_ tab of Autoware Runtime Manager (ARM), and load the sample ROSBAG data, which is located in `~/.autoware`. _Show Hidden Files_ needs to be checked for the `.autoware` folder to be displayed.
 
 <p align="center">
-<img src="./images/demo_images/demo_load_rosbag.png" width="800">
+<img src="../images/demo_images/demo_load_rosbag.png" width="800">
 </p>
 
 4. Set the start time to `140`, then click _Play_ and _Pause_ just after it has started playing.
 
 <p align="center">
-<img src="./images/demo_images/demo_play_pause_rosbag.png" width="800">
+<img src="../images/demo_images/demo_play_pause_rosbag.png" width="800">
 </p>
 
 5. Launch RViz through the _RViz_ button in the bottom-right corner of the ARM.
@@ -55,12 +55,12 @@ $ roslaunch runtime_manager runtime_manager.launch
 6. Go to the _Quick Start_ tab of ARM, and load the preinstalled roslaunch scripts one by one. The scripts are located in _Autoware/src/autoware/documentation/launch/rosbag_demo_. The scripts need to be enabled by clicking on the left button as shown in the image for the _Map_. 
 
 <p align="center">
-<img src="./images/demo_images/demo_load_map.png" width="800">
+<img src="../images/demo_images/demo_load_map.png" width="800">
 </p>
 
 Un-pausing the simulation after starting the _Map_ will show the pointcloud map in Rviz.
 
 <p align="center">
-<img src="./images/demo_images/demo_map_shown.png" width="800">
+<img src="../images/demo_images/demo_map_shown.png" width="800">
 </p>
 
